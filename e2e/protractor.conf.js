@@ -2,6 +2,7 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
+const config = require('./protractor.conf').config;
 
 exports.config = {
   allScriptsTimeout: 11000,
@@ -10,6 +11,9 @@ exports.config = {
   ],
   capabilities: {
     'browserName': 'chrome'
+    chromeOptions: {
+      args: ['--headless', '--no-sandbox']
+    }
   },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
@@ -25,15 +29,5 @@ exports.config = {
     });
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
   }
-
-const config = require('./protractor.conf').config;
-
-config.capabilities = {
-  browserName: 'chrome',
-  chromeOptions: {
-    args: ['--headless', '--no-sandbox']
-  }
-};
-
 exports.config = config;
 };
