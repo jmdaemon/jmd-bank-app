@@ -9,6 +9,7 @@ exports.config = {
   specs: [
     './src/**/*.e2e-spec.ts'
   ],
+  require('./protractor.conf'),
   capabilities: {
     'browserName': 'chrome'
     chromeOptions: {
@@ -30,4 +31,3 @@ exports.config = {
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
   }
 };
-exports.config = config
