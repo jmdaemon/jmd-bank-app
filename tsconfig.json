@@ -21,7 +21,6 @@
     ], 
 
     "paths": {
-        "baseUrl": ".",
         "@app/*": ["src/app/*"],
         "@environments/*": ["src/environments/*"]
     }
