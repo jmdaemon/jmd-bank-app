@@ -1,6 +1,9 @@
 [![Build Status](https://travis-ci.com/jmdaemon/jmd-bank-app.png?branch=master)](https://travis-ci.com/jmdaemon/jmd-bank-app})
 # JmdBankApp
 
+## NOTICE
+This project is incomplete and no longer maintained.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
 ## Development server
